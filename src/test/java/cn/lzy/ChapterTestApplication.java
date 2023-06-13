@@ -17,7 +17,6 @@ public class ChapterTestApplication {
 
     @Autowired
     Student student;
-
     @Test
     public void getHello(){
         String hello=chapterController.sayHello();

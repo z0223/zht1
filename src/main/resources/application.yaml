@@ -1,13 +1,13 @@
-server:
-  port: 80978
-  servlet:
-    context-path: /chapter
+#server:
+#  port: 80978
+#  servlet:
+#    context-path: /chapter
 
-student:
-  id: 006
-  name: 李四
-  age: 25
-  hobby: [read,basketball,football]
-  elect-product: [phone15 pro max,pc]
-  friends: {key1: mn,key2: kl}
-  course: {courseId: 007,courseName: 云计算}
+#student:
+#  id: 006
+#  name: 李四
+#  age: 25
+#  hobby: [read,basketball,football]
+#  elect-product: [phone15 pro max,pc]
+#  friends: {key1: mn,key2: kl}
+#  course: {courseId: 007,courseName: 云计算}

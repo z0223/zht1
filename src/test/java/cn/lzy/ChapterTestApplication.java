@@ -5,6 +5,7 @@ import cn.lzy.configbean.Student;
 import cn.lzy.configbean.User;
 import cn.lzy.controller.ChapterController;
 
+import cn.lzy.customconfig.CustomProperties;
 import cn.lzy.customconfig.MyProperties;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,6 +36,9 @@ public class ChapterTestApplication {
     @Autowired
     ApplicationContext applicationContext;
 
+    @Autowired
+    CustomProperties customProperties;
+
     @Test
     public void getHello(){
         String hello=chapterController.sayHello();
@@ -48,6 +52,7 @@ public class ChapterTestApplication {
         if (myProperties != null){
             myProperties.getResult();
         }
+        System.out.println("单元测试返回CustomProperties数据==="+customProperties);
 
         /*try {
             System.out.println("单元测试返回student的数据---" + new String(result.getBytes("iso8859-1"), "utf-8"));
